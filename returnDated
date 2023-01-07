@@ -1,0 +1,5 @@
+#! /bin/zsh
+
+x="$(date +"%Y-%m-%d")_$1";
+cp $1 $x;
+echo "copied $1 to $x";

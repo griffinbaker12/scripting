@@ -1,0 +1,9 @@
+#! /bin/zsh
+
+y=$(basename -s ".$1" $2)
+
+echo "$y";
+
+d=$(date +"%Y-%m-%d");
+
+echo "$y_$d.$1";

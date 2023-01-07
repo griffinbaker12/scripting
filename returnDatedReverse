@@ -1,0 +1,11 @@
+#! /bin/zsh
+
+x="$(basename -s ".$1" $2)_";
+
+echo $x;
+
+d=$(date +"%Y-%m-%d");
+
+cp $2 "$x$d.$1";
+
+echo "copied $2 into $x$d.$1";
