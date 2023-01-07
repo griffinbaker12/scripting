@@ -1,0 +1,8 @@
+#! /bin/zsh
+
+ext=$1;
+
+lower=$(echo ${ext:l});
+
+ls | basename -s .$ext -a *.$ext | xargs -I {} mv {}.$ext {}.$lower;
+
